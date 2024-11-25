@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7684ac23-7a39-4c1d-b51c-6d5f3c6fa06b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LTM-RD.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/connect_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/dialog_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/file_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/hdd_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/listen_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/loader_icon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/loader_icon2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/online.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/send_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/stop_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/window_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bus/common/CommonBus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bus/rmi/IRemoteDesktop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bus/rmi/RemoteDesktopImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bus/rmi/RmiClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bus/rmi/RmiServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bus/tcp/TcpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bus/tcp/TcpServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/gui/MainFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/gui/client/ClientPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/gui/common/CommonLabel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/gui/common/CommonPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/gui/remote/ComputerInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/gui/remote/DriveInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/gui/remote/DrivesInfoPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/gui/remote/HardwareDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/gui/remote/HardwareGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/gui/remote/RemoteFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/gui/server/ServerPanel.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2pLMr3KC6IARwVDRg7j82LaPzv6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Application.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Workspace/side/LTM-RD"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\side\LTM-RD" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Application" />
+      <module name="LTM-RD" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7684ac23-7a39-4c1d-b51c-6d5f3c6fa06b" name="Changes" comment="" />
+      <created>1732541097949</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732541097949</updated>
+      <workItem from="1732541098987" duration="490000" />
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/gui/MainFrame.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
