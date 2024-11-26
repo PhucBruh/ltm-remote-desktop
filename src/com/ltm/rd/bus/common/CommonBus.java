@@ -38,7 +38,7 @@ public class CommonBus {
     // TODO: handle events of server
     public void startListeningOnServer(String host, int port, String password) throws IOException, AWTException {
         if(!this.rmi_server.isBinding()) {
-            this.rmi_server.startBindingOnRmiServer(host, port + 1);
+            this.rmi_server.startBindingOnRmiServer(host, port, password);
         }
     }
 
@@ -50,7 +50,7 @@ public class CommonBus {
 
     public void startConnectingToServer(String host, int port, String password) throws Exception {
         // TODO: check server is listening?
-        this.rmi_client.startConnectingToRmiServer(host, port + 1);
+        this.rmi_client.startConnectingToRmiServer(host, port, password);
     }
 
     public Vector<String> getAllIpv4AddressesOnLocal() throws SocketException {
