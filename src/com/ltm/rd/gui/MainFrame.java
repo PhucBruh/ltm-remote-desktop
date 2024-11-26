@@ -1,9 +1,9 @@
-package com.gui;
+package com.ltm.rd.gui;
 
-import com.bus.common.CommonBus;
-import com.gui.client.ClientPanel;
-import com.gui.common.CommonLabel;
-import com.gui.server.ServerPanel;
+import com.ltm.rd.bus.common.CommonBus;
+import com.ltm.rd.gui.client.ClientPanel;
+import com.ltm.rd.gui.common.CommonLabel;
+import com.ltm.rd.gui.server.ServerPanel;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridBagLayout;

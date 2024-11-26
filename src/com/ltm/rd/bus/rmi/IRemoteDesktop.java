@@ -1,6 +1,6 @@
-package com.bus.rmi;
+package com.ltm.rd.bus.rmi;
 
-import com.gui.remote.ComputerInfo;
+import com.ltm.rd.gui.remote.ComputerInfo;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 

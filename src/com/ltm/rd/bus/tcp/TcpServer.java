@@ -1,4 +1,4 @@
-package com.bus.tcp;
+package com.ltm.rd.bus.tcp;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -26,7 +26,7 @@ public class TcpServer {
     }
 
     public void startListeningOnTcpServer(String host, int port, String password) throws IOException {
-        if(this.is_listening == false) {
+        if(!this.is_listening) {
             InetSocketAddress endpoint = new InetSocketAddress(host, port);
             this.password = password;
             this.server = new ServerSocket();
@@ -36,7 +36,7 @@ public class TcpServer {
     }
 
     public void stopListeningOnTcpServer() throws IOException {
-        if(this.is_listening == true) {
+        if(this.is_listening) {
             this.server.close();
             if(this.client != null) this.client.close();
             this.is_listening = false;
@@ -61,10 +61,10 @@ public class TcpServer {
 
     public Vector<String> getAllIpv4AddressesOnLocal() throws SocketException {
         Vector<String> ipv4_addresses = new Vector<>();
-        Enumeration networks = NetworkInterface.getNetworkInterfaces();
+        Enumeration<NetworkInterface> networks = NetworkInterface.getNetworkInterfaces();
         while(networks.hasMoreElements()) {
             NetworkInterface sub_networks = (NetworkInterface) networks.nextElement();
-            Enumeration inet_addresses = sub_networks.getInetAddresses();
+            Enumeration<InetAddress> inet_addresses = sub_networks.getInetAddresses();
             while(inet_addresses.hasMoreElements()) {
                 try {
                     Inet4Address ipv4 = (Inet4Address) inet_addresses.nextElement();

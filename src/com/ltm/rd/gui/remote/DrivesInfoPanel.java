@@ -1,4 +1,4 @@
-package com.gui.remote;
+package com.ltm.rd.gui.remote;
 
 import java.awt.Color;
 import java.awt.Component;

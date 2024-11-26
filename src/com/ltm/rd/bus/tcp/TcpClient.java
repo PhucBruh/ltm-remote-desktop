@@ -1,4 +1,4 @@
-package com.bus.tcp;
+package com.ltm.rd.bus.tcp;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -16,7 +16,7 @@ public class TcpClient extends Thread {
     }
 
     public void startConnectingToTcpServer(String host, int port, String password) throws IOException {
-        if(this.is_connected_server == false) {
+        if(!this.is_connected_server) {
             this.client = new Socket(host, port);
             DataOutputStream dos = new DataOutputStream(this.client.getOutputStream());
             DataInputStream dis = new DataInputStream(this.client.getInputStream());
@@ -35,7 +35,7 @@ public class TcpClient extends Thread {
     }
 
     public void stopConnectingToTcpServer() throws IOException {
-        if(this.is_connected_server = true) {
+        if(this.is_connected_server) {
             this.client.close();
             //this.chat_bus.setSocket(null);
             this.is_connected_server = false;

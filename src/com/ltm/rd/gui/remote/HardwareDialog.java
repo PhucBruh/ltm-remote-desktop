@@ -1,6 +1,6 @@
-package com.gui.remote;
+package com.ltm.rd.gui.remote;
 
-import com.bus.rmi.IRemoteDesktop;
+import com.ltm.rd.bus.rmi.IRemoteDesktop;
 import java.awt.Dimension;
 import java.rmi.RemoteException;
 import javax.swing.ImageIcon;

@@ -1,4 +1,4 @@
-package com.gui.common;
+package com.ltm.rd.gui.common;
 
 import java.awt.Color;
 import java.awt.Cursor;

@@ -1,8 +1,8 @@
-package com.gui.remote;
+package com.ltm.rd.gui.remote;
 
-import com.bus.common.CommonBus;
-import com.bus.rmi.IRemoteDesktop;
-import com.gui.client.ClientPanel;
+import com.ltm.rd.bus.common.CommonBus;
+import com.ltm.rd.bus.rmi.IRemoteDesktop;
+import com.ltm.rd.gui.client.ClientPanel;
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.image.BufferedImage;
@@ -33,7 +33,8 @@ public class RemoteFrame extends JFrame implements Runnable {
     private volatile Thread screen_thread;
 
     public RemoteFrame(ClientPanel client_panel, CommonBus common_bus, String quality) throws Exception {
-        this.setTitle("You are remoting " + common_bus.getTcpClient().getClient().getLocalAddress().getHostName());
+//        this.setTitle("You are remoting " + common_bus.getTcpClient().getClient().getLocalAddress().getHostName());
+//        this.setTitle("You are remoting " + common_bus.getTcpClient().getClient().getLocalAddress().getHostName());
         this.setIconImage(new ImageIcon(this.getClass().getClassLoader().getResource("window_icon.png")).getImage());
         this.getContentPane().setBackground(Color.BLACK);
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
@@ -228,7 +229,8 @@ public class RemoteFrame extends JFrame implements Runnable {
         int width = this.screen_label.getWidth();
         int height = this.screen_label.getHeight();
         try {
-            while(this.common_bus.getTcpClient().isConnectedServer()) {
+//            while(this.common_bus.getTcpClient().isConnectedServer()) {
+            while(this.common_bus.getRmiClient().isRemoteServer()) {
                 byte[] dgram = this.remote_obj.takeScreenshotServer(quality);
                 ByteArrayInputStream bis = new ByteArrayInputStream(dgram);
                 Image screenshot = ImageIO.read(bis).getScaledInstance(width, height, Image.SCALE_SMOOTH);
@@ -248,8 +250,8 @@ public class RemoteFrame extends JFrame implements Runnable {
             super.dispose();
             this.client_panel.setEnabled(true);
             this.common_bus.getRmiClient().setRemoteServer(false);
-            this.common_bus.getTcpClient().setConnectedServer(false);
-            this.common_bus.getTcpClient().getClient().close();
+//            this.common_bus.getTcpClient().setConnectedServer(false);
+//            this.common_bus.getTcpClient().getClient().close();
             if(!this.screen_thread.isInterrupted())
                 this.screen_thread.isInterrupted();
         }

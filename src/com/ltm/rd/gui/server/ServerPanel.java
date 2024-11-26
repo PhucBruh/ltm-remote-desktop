@@ -1,10 +1,10 @@
-package com.gui.server;
+package com.ltm.rd.gui.server;
 
-import com.bus.common.CommonBus;
-import com.gui.MainFrame;
-import com.gui.client.ClientPanel;
-import com.gui.common.CommonLabel;
-import com.gui.common.CommonPanel;
+import com.ltm.rd.bus.common.CommonBus;
+import com.ltm.rd.gui.MainFrame;
+import com.ltm.rd.gui.client.ClientPanel;
+import com.ltm.rd.gui.common.CommonLabel;
+import com.ltm.rd.gui.common.CommonPanel;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
@@ -62,7 +62,7 @@ public class ServerPanel extends JPanel implements Runnable {
                 try {
                     main_panel.getHostCombo().removeAllItems();
                     main_panel.getHostCombo().addItem("0.0.0.0");
-                    Vector<String> ipv4_addresses = common_bus.getTcpServer().getAllIpv4AddressesOnLocal();
+                    Vector<String> ipv4_addresses = common_bus.getAllIpv4AddressesOnLocal();
                     for(String ipv4 : ipv4_addresses) {
                         main_panel.getHostCombo().addItem(ipv4);
                     }
@@ -167,11 +167,11 @@ public class ServerPanel extends JPanel implements Runnable {
 
     @Override
     public void run() {
-        while(this.common_bus.getTcpServer().isListening()) {
-            try {
-                this.common_bus.getTcpServer().waitingConnectionFromClient();
-            }
-            catch(Exception e) {}
-        }
+//        while(this.common_bus.getTcpServer().isListening()) {
+//            try {
+//                this.common_bus.getTcpServer().waitingConnectionFromClient();
+//            }
+//            catch(Exception e) {}
+//        }
     }
 }

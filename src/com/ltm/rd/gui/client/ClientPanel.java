@@ -1,10 +1,10 @@
-package com.gui.client;
+package com.ltm.rd.gui.client;
 
-import com.bus.common.CommonBus;
-import com.gui.MainFrame;
-import com.gui.common.CommonLabel;
-import com.gui.common.CommonPanel;
-import com.gui.remote.RemoteFrame;
+import com.ltm.rd.bus.common.CommonBus;
+import com.ltm.rd.gui.MainFrame;
+import com.ltm.rd.gui.common.CommonLabel;
+import com.ltm.rd.gui.common.CommonPanel;
+import com.ltm.rd.gui.remote.RemoteFrame;
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;

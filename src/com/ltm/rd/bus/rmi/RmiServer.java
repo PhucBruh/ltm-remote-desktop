@@ -1,4 +1,4 @@
-package com.bus.rmi;
+package com.ltm.rd.bus.rmi;
 
 import java.awt.AWTException;
 import java.net.MalformedURLException;
@@ -17,7 +17,7 @@ public class RmiServer {
     }
 
     public void startBindingOnRmiServer(String host, int port) throws RemoteException, MalformedURLException, AWTException {
-        if(this.is_binding == false) {
+        if(!this.is_binding) {
             try {
                 this.url = "rmi://" + host + ":" + port + "/remote";
                 this.is_binding = true;
@@ -33,7 +33,7 @@ public class RmiServer {
     }
 
     public void stopBindingOnRmiServer() throws RemoteException, MalformedURLException, NotBoundException {
-        if(this.is_binding == true) {
+        if(this.is_binding) {
             Naming.unbind(this.url);
             this.url = null;
             this.is_binding = false;

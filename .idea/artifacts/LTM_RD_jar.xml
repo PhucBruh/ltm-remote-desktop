@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LTM-RD:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/LTM_RD_jar</output-path>
+    <root id="archive" name="LTM-RD.jar">
+      <element id="module-output" name="LTM-RD" />
+    </root>
+  </artifact>
+</component>

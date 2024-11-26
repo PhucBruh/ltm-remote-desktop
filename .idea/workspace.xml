@@ -1,78 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="LTM-RD:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7684ac23-7a39-4c1d-b51c-6d5f3c6fa06b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LTM-RD.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/connect_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/dialog_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/file_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/hdd_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/listen_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/loader_icon.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/loader_icon2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/online.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/send_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/stop_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/window_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bus/common/CommonBus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bus/rmi/IRemoteDesktop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bus/rmi/RemoteDesktopImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bus/rmi/RmiClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bus/rmi/RmiServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bus/tcp/TcpClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bus/tcp/TcpServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gui/MainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gui/client/ClientPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gui/common/CommonLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gui/common/CommonPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gui/remote/ComputerInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gui/remote/DriveInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gui/remote/DrivesInfoPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gui/remote/HardwareDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gui/remote/HardwareGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gui/remote/RemoteFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gui/server/ServerPanel.java" afterDir="false" />
+    <list default="true" id="7684ac23-7a39-4c1d-b51c-6d5f3c6fa06b" name="Changes" comment="first">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/LTM_RD_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bus/common/CommonBus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/bus/common/CommonBus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bus/rmi/IRemoteDesktop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/bus/rmi/IRemoteDesktop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bus/rmi/RemoteDesktopImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/bus/rmi/RemoteDesktopImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bus/rmi/RmiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/bus/rmi/RmiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bus/rmi/RmiServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/bus/rmi/RmiServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bus/tcp/TcpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/bus/tcp/TcpClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bus/tcp/TcpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/bus/tcp/TcpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/gui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/gui/client/ClientPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/client/ClientPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/gui/common/CommonLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/common/CommonLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/gui/common/CommonPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/common/CommonPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/gui/remote/ComputerInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/remote/ComputerInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/gui/remote/DriveInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/remote/DriveInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/gui/remote/DrivesInfoPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/remote/DrivesInfoPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/gui/remote/HardwareDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/remote/HardwareDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/gui/remote/HardwareGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/remote/HardwareGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/gui/remote/RemoteFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/remote/RemoteFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/gui/server/ServerPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/server/ServerPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2pLMr3KC6IARwVDRg7j82LaPzv6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Application.executor": "Run",
+    "Application.App2.executor": "Run",
+    "Application.Application.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Workspace/side/LTM-RD"
+    "last_opened_file_path": "D:/Workspace/side/LTM-RD/src",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "sshConsole"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Workspace\side\LTM-RD" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\side\LTM-RD\src" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Application" />
+      <option name="MAIN_CLASS_NAME" value="com.ltm.rd.Application" />
       <module name="LTM-RD" />
+      <extension name="de.eudaemon.ideaswag.SwingspectorExtension">
+        <Swingspector>
+          <keystroke code="59" modifiers="130" />
+          <active value="false" />
+          <timeout>5.0</timeout>
+        </Swingspector>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,17 +117,48 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1732541097949</updated>
-      <workItem from="1732541098987" duration="490000" />
+      <workItem from="1732541098987" duration="604000" />
+      <workItem from="1732542067233" duration="1487000" />
+      <workItem from="1732584936822" duration="933000" />
+      <workItem from="1732588112876" duration="6711000" />
     </task>
+    <task id="LOCAL-00001" summary="first">
+      <option name="closed" value="true" />
+      <created>1732541624253</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732541624253</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first" />
+    <option name="LAST_COMMIT_MESSAGE" value="first" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/gui/MainFrame.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/com/ltm/rd/bus/common/CommonBus.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ltm/rd/bus/rmi/RmiServer.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ltm/rd/bus/rmi/RmiServer.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ltm/rd/bus/common/CommonBus.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

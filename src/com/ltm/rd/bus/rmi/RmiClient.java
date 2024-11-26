@@ -1,4 +1,4 @@
-package com.bus.rmi;
+package com.ltm.rd.bus.rmi;
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;
@@ -15,15 +15,24 @@ public class RmiClient {
     }
 
     public void startConnectingToRmiServer(String host, int port) throws RemoteException, NotBoundException, MalformedURLException {
-        if(this.is_remote_server == false) {
+        if(!this.is_remote_server) {
             String url = "rmi://" + host + ":" + port + "/remote";
             this.remote_obj = (IRemoteDesktop) Naming.lookup(url);
             this.is_remote_server = true;
         }
     }
 
+    public void startConnectingToRmiServer(String host, int port, int password) throws RemoteException, NotBoundException, MalformedURLException {
+        if(!this.is_remote_server) {
+            String url = "rmi://" + host + ":" + port + "/remote";
+            this.remote_obj = (IRemoteDesktop) Naming.lookup(url);
+            this.is_remote_server = true;
+        }
+    }
+
+
     public void stopConnectingToRmiServer() {
-        if(this.is_remote_server == true) {
+        if(this.is_remote_server) {
             this.remote_obj = null;
             this.is_remote_server = false;
         }

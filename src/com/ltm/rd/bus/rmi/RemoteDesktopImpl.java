@@ -1,7 +1,7 @@
-package com.bus.rmi;
+package com.ltm.rd.bus.rmi;
 
-import com.gui.remote.ComputerInfo;
-import com.gui.remote.DriveInfo;
+import com.ltm.rd.gui.remote.ComputerInfo;
+import com.ltm.rd.gui.remote.DriveInfo;
 import com.sun.management.OperatingSystemMXBean;
 import java.awt.*;
 import java.awt.image.BufferedImage;

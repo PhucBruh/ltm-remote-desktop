@@ -1,4 +1,6 @@
-import com.gui.MainFrame;
+package com.ltm.rd;
+
+import com.ltm.rd.gui.MainFrame;
 import java.awt.EventQueue;
 import java.io.IOException;
 import javax.swing.JOptionPane;
