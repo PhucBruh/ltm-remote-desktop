@@ -8,6 +8,9 @@ public interface IRemoteDesktop extends Remote {
     // TODO: for capture screen to share
     byte[] takeScreenshotServer(String quality) throws Exception;
 
+    // TODO: for authenticate client
+    boolean authenticate(String password) throws RemoteException;
+
     // TODO: for remote mouse
     void mouseMovedServer(int x, int y) throws RemoteException;
     void mousePressedServer(int buttons) throws RemoteException;

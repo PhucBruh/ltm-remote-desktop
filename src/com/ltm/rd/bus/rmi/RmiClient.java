@@ -14,10 +14,11 @@ public class RmiClient {
         this.is_remote_server = false;
     }
 
-    public void startConnectingToRmiServer(String host, int port) throws RemoteException, NotBoundException, MalformedURLException {
+    public void startConnectingToRmiServer(String host, int port, String password) throws RemoteException, NotBoundException, MalformedURLException {
         if(!this.is_remote_server) {
             String url = "rmi://" + host + ":" + port + "/remote";
             this.remote_obj = (IRemoteDesktop) Naming.lookup(url);
+            this.remote_obj.authenticate(password);
             this.is_remote_server = true;
         }
     }

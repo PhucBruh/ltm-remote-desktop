@@ -36,6 +36,11 @@ public class RemoteDesktopImpl extends UnicastRemoteObject implements IRemoteDes
         return bos.toByteArray();
     }
 
+    @Override
+    public boolean authenticate(String password) throws RemoteException {
+        return false;
+    }
+
     // TODO: mouse
     @Override
     public void mouseMovedServer(int x, int y) throws RemoteException {

@@ -16,7 +16,7 @@ public class RmiServer {
         this.is_binding = false;
     }
 
-    public void startBindingOnRmiServer(String host, int port) throws RemoteException, MalformedURLException, AWTException {
+    public void startBindingOnRmiServer(String host, int port, String password) throws RemoteException, MalformedURLException, AWTException {
         if(!this.is_binding) {
             try {
                 this.url = "rmi://" + host + ":" + port + "/remote";
