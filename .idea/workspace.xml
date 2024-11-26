@@ -11,11 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7684ac23-7a39-4c1d-b51c-6d5f3c6fa06b" name="Changes" comment="first">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ltm/rd/bus/common/CommonBus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/bus/common/CommonBus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ltm/rd/bus/tcp/TcpClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ltm/rd/bus/tcp/TcpServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ltm/rd/bus/rmi/RmiServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/bus/rmi/RmiServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ltm/rd/gui/client/ClientPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/client/ClientPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ltm/rd/gui/server/ServerPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/server/ServerPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ltm/rd/gui/remote/RemoteFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/remote/RemoteFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +102,8 @@
       <workItem from="1732542067233" duration="1487000" />
       <workItem from="1732584936822" duration="933000" />
       <workItem from="1732588112876" duration="6711000" />
-      <workItem from="1732616240765" duration="879000" />
+      <workItem from="1732616240765" duration="1661000" />
+      <workItem from="1732618267317" duration="1750000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <option name="closed" value="true" />
@@ -128,6 +127,11 @@
           <url>file://$PROJECT_DIR$/src/com/ltm/rd/bus/common/CommonBus.java</url>
           <line>39</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ltm/rd/gui/remote/RemoteFrame.java</url>
+          <line>195</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

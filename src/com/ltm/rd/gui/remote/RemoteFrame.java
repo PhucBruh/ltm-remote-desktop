@@ -33,8 +33,6 @@ public class RemoteFrame extends JFrame implements Runnable {
     private volatile Thread screen_thread;
 
     public RemoteFrame(ClientPanel client_panel, CommonBus common_bus, String quality) throws Exception {
-//        this.setTitle("You are remoting " + common_bus.getTcpClient().getClient().getLocalAddress().getHostName());
-//        this.setTitle("You are remoting " + common_bus.getTcpClient().getClient().getLocalAddress().getHostName());
         this.setIconImage(new ImageIcon(this.getClass().getClassLoader().getResource("window_icon.png")).getImage());
         this.getContentPane().setBackground(Color.BLACK);
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
@@ -250,8 +248,6 @@ public class RemoteFrame extends JFrame implements Runnable {
             super.dispose();
             this.client_panel.setEnabled(true);
             this.common_bus.getRmiClient().setRemoteServer(false);
-//            this.common_bus.getTcpClient().setConnectedServer(false);
-//            this.common_bus.getTcpClient().getClient().close();
             if(!this.screen_thread.isInterrupted())
                 this.screen_thread.isInterrupted();
         }
