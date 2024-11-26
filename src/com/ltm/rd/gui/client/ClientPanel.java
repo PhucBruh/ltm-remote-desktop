@@ -153,7 +153,7 @@ public class ClientPanel extends JPanel {
                     EventQueue.invokeLater(() -> {
                         try {
                             if(this.low_radio.isSelected()) {
-                                new RemoteFrame(this, this.common_bus, "jpg");
+                                new RemoteFrame(this, this.common_bus, "jepg");
                             }
                             else if(this.high_radio.isSelected()) {
                                 new RemoteFrame(this, this.common_bus, "png");

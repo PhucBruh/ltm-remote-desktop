@@ -10,29 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7684ac23-7a39-4c1d-b51c-6d5f3c6fa06b" name="Changes" comment="first">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/LTM_RD_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bus/common/CommonBus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/bus/common/CommonBus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bus/rmi/IRemoteDesktop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/bus/rmi/IRemoteDesktop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bus/rmi/RemoteDesktopImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/bus/rmi/RemoteDesktopImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bus/rmi/RmiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/bus/rmi/RmiClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bus/rmi/RmiServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/bus/rmi/RmiServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bus/tcp/TcpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/bus/tcp/TcpClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bus/tcp/TcpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/bus/tcp/TcpServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gui/client/ClientPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/client/ClientPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gui/common/CommonLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/common/CommonLabel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gui/common/CommonPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/common/CommonPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gui/remote/ComputerInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/remote/ComputerInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gui/remote/DriveInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/remote/DriveInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gui/remote/DrivesInfoPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/remote/DrivesInfoPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gui/remote/HardwareDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/remote/HardwareDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gui/remote/HardwareGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/remote/HardwareGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gui/remote/RemoteFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/remote/RemoteFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gui/server/ServerPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/server/ServerPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ltm/rd/bus/common/CommonBus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/bus/common/CommonBus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ltm/rd/bus/tcp/TcpClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ltm/rd/bus/tcp/TcpServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ltm/rd/gui/client/ClientPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/client/ClientPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ltm/rd/gui/server/ServerPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ltm/rd/gui/server/ServerPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +44,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App2.executor": "Run",
-    "Application.Application.executor": "Debug",
+    "Application.Application.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -121,6 +104,7 @@
       <workItem from="1732542067233" duration="1487000" />
       <workItem from="1732584936822" duration="933000" />
       <workItem from="1732588112876" duration="6711000" />
+      <workItem from="1732616240765" duration="879000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <option name="closed" value="true" />
@@ -142,23 +126,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/ltm/rd/bus/common/CommonBus.java</url>
-          <line>53</line>
+          <line>39</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/ltm/rd/bus/rmi/RmiServer.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/ltm/rd/bus/rmi/RmiServer.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/ltm/rd/bus/common/CommonBus.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
