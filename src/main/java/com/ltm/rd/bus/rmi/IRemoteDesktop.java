@@ -8,6 +8,7 @@ import java.rmi.RemoteException;
 public interface IRemoteDesktop extends Remote {
     // TODO: for capture screen to share
     boolean isWaitingForAuthentication() throws RemoteException;
+    void setConnecting(boolean b) throws RemoteException;
     String getPassword() throws RemoteException;
     void setPassword(String password) throws RemoteException;
 

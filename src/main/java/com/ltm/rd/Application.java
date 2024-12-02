@@ -45,5 +45,4 @@ public class Application{
             System.err.println("Load font failed");
         }
     }
-
 }

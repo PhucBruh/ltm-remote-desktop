@@ -20,6 +20,7 @@ public class RmiClient {
         if(!this.is_remote_server) {
             String url = "rmi://" + host + ":" + port + "/remote";
             this.remote_obj = (IRemoteDesktop) Naming.lookup(url);
+            this.remote_obj.setConnecting(true);
             this.remote_obj.setPassword(password);
             this.is_remote_server = true;
             this.host = host;

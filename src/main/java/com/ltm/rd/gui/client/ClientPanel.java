@@ -145,6 +145,9 @@ public class ClientPanel extends JPanel {
                     // TODO: check format ipv4
                     if(!this.isFormatIpv4(host)) throw new Exception("Wrong format IPV4");
 
+                    if(host.isEmpty()) throw new Exception("Fill the ip address");
+
+
                     // TODO: start connect
                     this.common_bus.startConnectingToServer(host, port, password);
 

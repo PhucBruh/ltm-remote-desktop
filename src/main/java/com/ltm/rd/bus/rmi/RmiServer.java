@@ -32,7 +32,7 @@ public class RmiServer {
 
                 this.remote_obj = new RemoteDesktopImpl();
                 Naming.rebind(this.url, this.remote_obj); // only new object in here
-                if (this.auth_thread==null) {
+                if (this.auth_thread==null || !this.auth_thread.isAlive()) {
                     this.auth_thread = init_auth_thread();
                 }
                 this.auth_thread.start();
@@ -41,17 +41,22 @@ public class RmiServer {
                 // TODO: rebind when port already bound
                 this.remote_obj = new RemoteDesktopImpl();
                 Naming.rebind(this.url, this.remote_obj);
+                if (this.auth_thread==null) {
+                    this.auth_thread = init_auth_thread();
+                }
+                this.auth_thread.start();
             }
         }
     }
 
     public void stopBindingOnRmiServer() throws RemoteException, MalformedURLException, NotBoundException {
         if(this.is_binding) {
+            if (this.remote_obj!=null) UnicastRemoteObject.unexportObject(this.remote_obj, true);
             Naming.unbind(this.url);
             this.url = null;
             this.is_binding = false;
-            if (this.remote_obj!=null) UnicastRemoteObject.unexportObject(this.remote_obj, true);
             this.auth_thread.interrupt();
+            this.auth_thread = null;
         }
     }
 
@@ -63,7 +68,7 @@ public class RmiServer {
         return new Thread(() -> {
             while (!Thread.currentThread().isInterrupted()) {
                 try {
-                    if (this.remote_obj.isWaitingForAuthentication() && !this.password.equals(this.remote_obj.getPassword())) {
+                    if (!this.password.equals(this.remote_obj.getPassword())) {
                         UnicastRemoteObject.unexportObject(this.remote_obj, true);
                         this.remote_obj = new RemoteDesktopImpl();
                         Naming.rebind(this.url, this.remote_obj);
@@ -72,7 +77,8 @@ public class RmiServer {
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
                     return;
-                } catch (RemoteException | AWTException | MalformedURLException e) {
+                }
+                catch (RemoteException | AWTException | MalformedURLException e) {
                     throw new RuntimeException(e);
                 }
             }
