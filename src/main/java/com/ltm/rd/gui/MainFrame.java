@@ -69,6 +69,7 @@ public class MainFrame extends JFrame {
     private void initComponents() {
         // TODO: constructor
         this.common_bus = new CommonBus();
+        this.common_bus.getRmiServer().setMainFrame(this);
         this.taskbar_panel = new JPanel();
         this.client_label = new CommonLabel();
         this.server_label = new CommonLabel();
@@ -143,6 +144,10 @@ public class MainFrame extends JFrame {
             this.chat_label.setSmallFont();
             common_label.setBigFont();
         }
+    }
+
+    public void notifyClientConnected() {
+        JOptionPane.showMessageDialog(this, "Client connected");
     }
 
     private void showPanelsSlider(JPanel show_panel, JPanel hide_panel, boolean isLeft) {

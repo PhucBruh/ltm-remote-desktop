@@ -18,26 +18,16 @@ public class RemoteDesktopImpl extends UnicastRemoteObject implements IRemoteDes
     public final static int GB = 1024 * 1024 * 1024;
 
     private String password;
-    private boolean is_connecting;
+    private int num_client_connections;
     private Robot mr_robot;
     private OperatingSystemMXBean os;
 
     public RemoteDesktopImpl() throws RemoteException, AWTException {
         super();
-        this.is_connecting = false;
+        this.num_client_connections = 0;
         this.password = "";
         this.mr_robot = new Robot();
         this.os = (OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
-    }
-
-    @Override
-    public boolean isWaitingForAuthentication() throws RemoteException {
-        return is_connecting;
-    }
-
-    @Override
-    public void setConnecting(boolean b) throws RemoteException {
-        this.is_connecting = b;
     }
 
     @Override
@@ -48,7 +38,12 @@ public class RemoteDesktopImpl extends UnicastRemoteObject implements IRemoteDes
     @Override
     public void setPassword(String password) throws RemoteException{
         this.password = password;
-        this.is_connecting = true;
+        this.num_client_connections +=1;
+    }
+
+    @Override
+    public int num_client_connections() throws RemoteException {
+        return this.num_client_connections;
     }
 
     @Override
